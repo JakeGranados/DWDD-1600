@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JG Re-Designed: Request a Delivery</title>
+    <link rel="stylesheet" href="JGdesign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>JG Re-Designed</h1>
+        <p>Bring your ideas to life</p>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">All About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="form.html">Request a Delivery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <h1>Request a Delivery</h1>
+        
+        <form action="thank-you.html" method="GET"> <!-- Update action to thank_you.html -->
+            
+            <fieldset>
+                <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label> 
+            <label>Last Name*<input type="text" name="lname" required></label> 
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                 <label>E-Mail*<input type="email" name="email" required></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Delivery Method</legend>
+                <label><input type="radio" name="method" value="home"> Directly to Home (2hrs)</label>
+                <label><input type="radio" name="method" value="gift">  Anonimus Gift (4hrs)
+                </label>
+                <label><input type="radio" name="method" value="overseas"> Over Seas (6hrs)</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Delivery Options</legend>   
+                <Label><input type="checkbox" name="porch" value="chosen"> Front Porch</Label>
+                 <Label><input type="checkbox" name="deck" value="chosen"> Back Deck</Label>
+                 <Label><input type="checkbox" name="driveway" value="chosen"> Driveway</Label>
+                 <Label><input type="checkbox" name="garage" value="chosen"> Inside Garage</Label>
+                
+                <label>Preferred Delivery Time
+                <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">Between 7:00am and 11:00am</option>
+                <option value="noon">Between 11:00pm and 2:00pm</option>
+                <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                <option value="evening">Between 5:00pm and 8:00pm</option>
+                </select>
+                </label>
+                
+            </fieldset>
+            
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2024 &bull; Jacob Granados &bull; <a href="mailto:jgredesigned@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
