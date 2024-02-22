@@ -178,14 +178,13 @@ select {
 
 label {
     display: block; /* Display labels as blocks */
-    margin-bottom: 5px; /* Spacing below labels */
+    margin-top: 10px; /* Spacing above labels */
 }
 
 /* Styling for user instructions */
 label + input,
 label + select,
 label + textarea {
-    margin-top: 5px; /* Spacing between user instructions and inputs */
 }
 
 /* Submit button styling */
