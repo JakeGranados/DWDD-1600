@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JG Re-Designed: Request a Delivery</title>
+    <link rel="stylesheet" href="JGdesign.css">
+    <style>
+      @font-face { font-family: Casanova Scotia; src: url('Casanova Scotia.otf'); } 
+      h1 {
+         font-family: Casanova Scotia;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    
+    <header>
+        <h1>JG Re-Designed</h1>
+        <p>Bring your ideas to life</p>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">All About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="form.html">Request a Delivery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <h1>Request a Delivery</h1>
+        
+        <form action="thank-you.html" method="GET"> <!-- Update action to thank_you.html -->
+            
+            <!-- Stacked Customer Information -->
+            <fieldset>
+                <legend>Customer Information</legend>
+                <div class="customer-info">
+                    <label for="fname">First Name*:</label>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last Name*:</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="phone">Cell Number*:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="987-555-1234"><br>
+                    <label for="email">E-Mail*:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            
+            <!-- Delivery Method -->
+            <fieldset>
+                <legend>Delivery Method</legend>
+                <label><input type="radio" name="method" value="home"> Directly to Home (2hrs)</label><br>
+                <label><input type="radio" name="method" value="gift"> Anonimus Gift (4hrs)</label><br>
+                <label><input type="radio" name="method" value="overseas"> Over Seas (6hrs)</label>
+            </fieldset>
+            
+            <!-- Delivery Options -->
+            <fieldset>
+                <legend>Delivery Options</legend>   
+                <label><input type="checkbox" name="porch" value="chosen"> Outer Space</label><br>
+                <label><input type="checkbox" name="deck" value="chosen"> Great wall of China</label><br>
+                <label><input type="checkbox" name="driveway" value="chosen"> Your mom's House</label><br>
+                <label><input type="checkbox" name="garage" value="chosen"> On Your Roof</label><br>
+                
+                <label>Preferred Delivery Time
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="morning">Lightspeed</option>
+                        <option value="noon">Speed of sound</option>
+                        <option value="afternoon">Speed of thought</option>
+                        <option value="evening">In the blink of an eye</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2024 &bull; Jacob Granados &bull; <a href="mailto:jgredesigned@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
